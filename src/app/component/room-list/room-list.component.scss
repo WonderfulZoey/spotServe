@@ -1,0 +1,144 @@
+.main-content {
+  background-color: #F6F7FB;
+  height: 100%;
+  overflow: hidden;
+  .spot-info {
+    height: 5rem;
+    font-size: 1.25rem;
+    margin: 1rem 2rem;
+    background-color: #fff;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    .spot-name {
+      display: inline-block;
+      line-height: 5rem;
+      margin-right: 4rem;
+      margin-left: 2rem;
+    }
+    .room-num {
+      display: inline-block;
+      line-height: 5rem;
+    }
+  }
+
+  .paper-info {
+    height: 9rem;
+    margin: 1rem 2rem;
+    background-color: #fff;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    .info-title {
+      font-size: 1.25rem;
+      padding: 1rem 2rem;
+    }
+    .add-paper {
+      text-align: center;
+      .fileInput-btn {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        width: 9rem;
+        height: 2.6rem;
+        border: 1px solid #D80C18;
+        border-radius: 1.3rem;
+        color: #D80C18;
+        input {
+          position: absolute;
+          top: 0;
+          right: 0;
+          opacity: 0;
+          font-size: 15rem;//放大字号解决覆盖问题
+        }
+      }
+    }
+    .paper-detail {
+      .info-list {
+        list-style: none;
+        color: #979797;
+        li {
+         float: left;
+          margin-right: 5rem;
+          &.operation {
+            color: #000;
+            .exchange-paper {
+              display: inline-block;
+              margin-right: 1rem;
+              cursor: pointer;
+            }
+            .del-paper {
+              display: inline-block;
+              margin-left: 1rem;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .room-module {
+    margin: 1rem 2rem;
+    background-color: #fff;
+    .room-header {
+      height: 5rem;
+      line-height: 5rem;
+      font-size: 1.25rem;
+      margin-left: 2rem;
+
+    }
+    .room-table {
+      color: #979797;
+      text-align: center;
+      thead {
+        th {
+          border-top: none;
+        }
+        span {
+          color: #5893B9;
+        }
+      }
+      tbody {
+        td {
+          span {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    color: #979797;
+    margin: 1rem 2rem;
+  }
+}
+
+.forbidden {
+  background: url("../../../assets/images/forbidden.png") no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.error {
+  background: url("../../../assets/images/error.png") no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.done {
+  background: url("../../../assets/images/done.png") no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.processing {
+  background: url("../../../assets/images/processing.png") no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+

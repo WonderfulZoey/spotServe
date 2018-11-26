@@ -1,0 +1,27 @@
+.pagination-main {
+  margin: 1rem 2rem;
+  .page-info {
+    color: #979797;
+    float: left;
+    height: 2.375rem;
+    line-height: 2.375rem;
+  }
+  .page-list-content {
+    float: right;
+    .pagination {
+      border: none;
+      .page-item {
+        .page-link {
+          border-radius:50%;
+          height: 2.125rem;
+          line-height: 0.875rem;
+        }
+        .current-link {
+          color: #fff;
+          background-color: #1187f3;
+        }
+      }
+    }
+  }
+}
+

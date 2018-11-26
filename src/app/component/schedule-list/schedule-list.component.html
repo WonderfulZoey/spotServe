@@ -1,0 +1,68 @@
+<div class="main-content">
+  <div class="spot-info">
+    <div class="spot-name">考点名称：上海大学考点</div>
+    <div class="room-num">考场数量：10</div>
+  </div>
+
+  <div class="schedule-module">
+      <div class="schedule-header">
+        <div class="header-name">日程列表</div>
+        <div class="date-pick">
+          <form class="form-inline"  style="display: inline-block;margin-right: 10px">
+            <div class="form-group">
+              <div class="input-group">
+                <input class="form-control" placeholder="请选择起始时间"
+                       name="dp1" [(ngModel)]="startDate" ngbDatepicker #d="ngbDatepicker" (focus)="d.toggle()" (dateSelect)="onDateSelect($event)">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><span class="fas fa-calendar-alt"></span></button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <span>--</span>
+          <form class="form-inline" style="display: inline-block;margin-left: 10px;">
+            <div class="form-group">
+              <div class="input-group">
+                <input class="form-control" placeholder="请选择结束时间"
+                       name="dp2" [(ngModel)]="endDate" ngbDatepicker #d2="ngbDatepicker" (focus)="d2.toggle()" (dateSelect)="onDateSelect($event)">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" (click)="d2.toggle()" type="button"><span class="fas fa-calendar-alt"></span></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <table class="table schedule-table">
+          <thead>
+          <tr>
+            <th>日程</th>
+            <th>考试科目</th>
+            <th>完成情况</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+        <tbody>
+        <tr>
+          <td  appShowDetail [data]="'2018'" [data1]="'1110'">2018-10-10  9:00-10:00</td>
+          <td>会计、公司战略</td>
+          <td class="done">已完成</td><!--未开始 进行中 已完成-->
+          <td appShowDetail [data]="'4536'" [data1]="'pppp'">下载答题数据</td>
+        </tr>
+        <tr>
+          <td>2018-10-10  9:00-10:00</td>
+          <td>会计、公司战略</td>
+          <td class="processing">进行中</td><!--未开始 进行中 已完成-->
+          <td></td>
+        </tr>
+        <tr>
+          <td>2018-10-10  9:00-10:00</td>
+          <td>会计、公司战略</td>
+          <td class="not-start">未开始</td><!--未开始 进行中 已完成-->
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+  </div>
+  <app-pagination></app-pagination>
+</div>

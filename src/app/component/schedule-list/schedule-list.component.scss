@@ -1,0 +1,82 @@
+.main-content {
+  background-color: #F6F7FB;
+  height: 100%;
+  overflow: hidden;
+  .spot-info {
+    height: 5rem;
+    font-size: 1.25rem;
+    margin: 1rem 2rem;
+    background-color: #fff;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    .spot-name {
+      display: inline-block;
+      line-height: 5rem;
+      margin-right: 4rem;
+      margin-left: 2rem;
+    }
+    .room-num {
+      display: inline-block;
+      line-height: 5rem;
+    }
+  }
+  .schedule-module {
+    margin: 1rem 2rem;
+    background-color: #fff;
+    .schedule-header {
+      margin-left: 2rem;
+      .header-name {
+        display: inline-block;
+        width: 6rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 1.25rem;
+      }
+      .date-pick {
+        display: inline-block;
+        height: 5rem;
+      }
+    }
+
+
+    .schedule-table {
+      color: #979797;
+      thead {
+        th {
+          padding-left: 4rem;
+          border-top: none;
+        }
+      }
+      tbody {
+        td {
+          padding-left: 4rem;
+          &:first-child,
+          &:last-child {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    color: #979797;
+    margin: 1rem 2rem;
+  }
+}
+
+.not-start {
+  font-weight: bold;
+}
+
+.done {
+  color:#85d43a;
+  font-weight: bold;
+}
+
+.processing {
+  color:#1f8be3;
+  font-weight: bold;
+}
+

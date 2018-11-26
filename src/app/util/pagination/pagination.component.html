@@ -1,0 +1,21 @@
+<div class="pagination-main" *ngIf="pageList">
+  <div class="page-info">共3条数据，当前第1页，共1页</div>
+  <nav aria-label="Page navigation example" class="page-list-content">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item" *ngFor="let page of pageList"><a class="page-link" [ngClass]="{'current-link':currentIndex===page.pageid}" href="#">{{page.pageid}}</a></li>
+      <li class="page-item" (click)="addPage()">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
